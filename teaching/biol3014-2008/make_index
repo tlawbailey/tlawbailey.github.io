@@ -1,0 +1,1 @@
+ls -1 *.ppt | awk 'BEGIN{print "<html> <ul>";} {print "<li><a href=\""$0"\">"$0"</a>"} END{print "</ul></html>";}' >! index.html
