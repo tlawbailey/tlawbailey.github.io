@@ -1,8 +1,0 @@
-#!/bin/csh
-echo "<html><body><ul>"
-foreach f ( * )
-  if !($f == "index.html") then
-    echo "  <li><a href=$f>$f</a></li>"
-  endif
-end
-echo "</ul></body></html>"
